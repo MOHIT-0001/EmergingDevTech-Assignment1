@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex and Grid Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+      padding: 20px;
+      font-size: 36px;
+      margin-top: 40px;
+    }
+
+    .flex-container-one {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 30px 10px;
+      gap: 20px;
+    }
+
+    .flex-container-two {
+      display: flex;
+      justify-content: start;
+      margin: 30px 10px;
+      gap: 20px;
+    }
+
+    .flex-container-three {
+      display: flex;
+      justify-content: end;
+      margin: 30px 10px;
+      gap: 20px;
+    }
+
+    .flex-container-four {
+      display: flex;
+      justify-content: center;
+      margin: 30px 10px;
+      gap: 20px;
+    }
+
+    .flex-container-five {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 10px;
+      gap: 20px;
+    }
+
+
+    .flex-item {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #flex1 {
+      background-color: #FF5733;
+    }
+
+    #flex2 {
+      background-color: #FFB533;
+    }
+
+    #flex3 {
+      background-color: #33FF57;
+    }
+
+    #flex4 {
+      background-color: #3357FF;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin: 30px 10px;
+      padding: 10px;
+      justify-items: center;
+      /* Centers grid items horizontally */
+      align-items: center;
+      /* Centers grid items vertically */
+    }
+
+    .grid-item {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    #grid1 {
+      background-color: #FF5733;
+    }
+
+    #grid2 {
+      background-color: #FFB533;
+    }
+
+    #grid3 {
+      background-color: #33FF57;
+    }
+
+    #grid4 {
+      background-color: #3357FF;
+    }
+
+    .grid-heading {
+      text-align: center;
+      font-size: 36px;
+      color: #4CAF50;
+      margin-top: 20px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <h1>Flex Start</h1>
+
+  <div class="flex-container-two">
+    <div class="flex-item" id="flex1">Flex Item 1</div>
+    <div class="flex-item" id="flex2">Flex Item 2</div>
+  </div>
+  <h1>Flex End</h1>
+
+  <div class="flex-container-three">
+    <div class="flex-item" id="flex1">Flex Item 1</div>
+    <div class="flex-item" id="flex2">Flex Item 2</div>
+  </div>
+  <h1>Flex Center</h1>
+
+  <div class="flex-container-four">
+    <div class="flex-item" id="flex1">Flex Item 1</div>
+    <div class="flex-item" id="flex2">Flex Item 2</div>
+  </div>
+  <h1>Flex Space-between</h1>
+
+  <div class="flex-container-five">
+    <div class="flex-item" id="flex1">Flex Item 1</div>
+    <div class="flex-item" id="flex2">Flex Item 2</div>
+  </div>
+  <h1>Flex Space-Between</h1>
+
+  <div class="flex-container-one">
+    <div class="flex-item" id="flex1">Flex Item 1</div>
+    <div class="flex-item" id="flex2">Flex Item 2</div>
+  </div>
+
+  <div class="grid-heading">Grid Layout</div>
+
+  <div class="grid-container">
+    <div class="grid-item" id="grid1">Grid 1</div>
+    <div class="grid-item" id="grid2">Grid 2</div>
+    <div class="grid-item" id="grid3">Grid 3</div>
+    <div class="grid-item" id="grid4">Grid 4</div>
+  </div>
+
+</body>
+
+</html>
