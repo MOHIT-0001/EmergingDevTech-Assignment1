@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ebf6fa;
+        }
+
+        header {
+            background-color: #001F3F;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .portfolio-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #001F3F;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .contact-detail {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-detail a {
+            color: #001F3F;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            word-wrap: break-word; 
+        }
+
+        .contact-detail a:hover {
+            color: #4CAF50;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-detail {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="portfolio-title">Mohit's Portfolio</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="contact-detail">
+            <p>Email: <a href="mailto:punimohit.13@gmail.com">punimohit.13@gmail.com</a></p>
+        </div>
+        <div class="contact-detail">
+            <p>GitHub: <a href="https://github.com/MOHIT-0001" target="_blank">github.com/MOHIT-0001</a></p>
+        </div>
+        <div class="contact-detail">
+            <p>Phone: 437-297-7734</p>
+        </div>
+        <div class="contact-detail">
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mohit-punia/" target="_blank">linkedin.com/in/mohit-punia/</a></p>
+        </div>
+    </div>
+</body>
+</html>
